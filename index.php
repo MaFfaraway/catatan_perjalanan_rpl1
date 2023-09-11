@@ -6,6 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PeduliSatu</title>
     <link rel="stylesheet" href="btsp/css/bootstrap.min.css">
+    <link rel="icon" href="https://cdn1.iconfinder.com/data/icons/earth-day-10/512/884_earth_day_world-256.png">
+
+    <style>
+        @media (max-width:1080px) {
+            #gambar {
+                order: 1;
+            }
+
+            #deskripsi {
+                order: 2;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -55,14 +68,16 @@
         <div class="col-lg-12">
             <div class="container">
                 <div class="row g-0">
-                    <div class=" my-auto col-lg-8">
+                    <div class=" my-auto col-lg-8" id="deskripsi">
                         <span class="">
                             <h1 class="text-white">PEDULISATU Dashboard</h1>
                             <h1 class="text-white">Untuk Satu Indonesia</h1>
                         </span>
                         <p class="text-white">Pusat data kesehatan Indonesia yang menyajikan informasi interaktif dalam bentuk dasbor.</p>
                     </div>
-                    <div class="col-lg-4"><img src="img/home-web-img.png" class="img-fluid" alt="" srcset=""></div>
+                    <div class="col-lg-4" id="gambar">
+                        <img src="img/home-web-img.png" class="img-fluid" alt="" srcset="">
+                    </div>
                 </div>
             </div>
         </div>
