@@ -56,9 +56,8 @@
                         </ul>
                     </li> -->
                 </ul>
-                <form class="d-flex mx-3" role="search">
-                    <button class="btn btn-outline-success" type="submit">Masuk</button>
-                </form>
+
+                <button class="btn btn-outline-success" onclick="location.href='login.php'">Masuk</button>
             </div>
         </div>
     </nav>

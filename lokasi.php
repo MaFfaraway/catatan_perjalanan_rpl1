@@ -1,4 +1,8 @@
-<?php include "config/conn.php" ?>
+<?php
+session_start();
+session_destroy();
+include "config/conn.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,6 +13,7 @@
 </head>
 
 <body>
+    <h1><?= $_SESSION['login']; ?></h1>
     <form action="config/aksi_lokasi.php" method="post">
         <div>
             <label for="">Nama Lokasi</label>
