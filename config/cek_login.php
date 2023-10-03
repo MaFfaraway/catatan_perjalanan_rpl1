@@ -13,8 +13,11 @@ $data   =   mysqli_num_rows($query);
 // print_r($data);
 
 if ($data > 0) {
-    $_SESSION['login']   =   "Sudah Login ";
-    header('location:../lokasi.php');
+
+    $dataUser   =   mysqli_fetch_array($query);
+    $_SESSION['nik']   = $dataUser['nik'];
+    $_SESSION['nama_lengkap']   = $dataUser['nama_lengkap'];
+    header('location:../admin/beranda.php');
 } else {
     echo "gagal";
 }

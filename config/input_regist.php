@@ -13,7 +13,7 @@ $query  =   "INSERT INTO `pengguna` (`nik`, `username`, `password`, `alamat`, `n
 $exe    =   mysqli_query($conn, $query);
 
 if ($exe) {
-    echo "berhasil";
+    header('location:../login.php');
 } else {
     echo "gagal";
 }
