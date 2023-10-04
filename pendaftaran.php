@@ -13,7 +13,7 @@
 
                             <div class="row pt-5">
                                 <div class="col-lg-12 text-center">
-                                    <h3 class="">PEDULISATU</h3>
+                                    <h3 class="">REGISTRASI PEDULISATU</h3>
                                 </div>
                             </div>
 
@@ -21,6 +21,11 @@
                                 <div class="row my-3">
                                     <div class="col-lg-12">
                                         <input type="number" name="nik" placeholder="Masukkan NIK Anda" id="" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="row my-3">
+                                    <div class="col-lg-12">
+                                        <input type="text" name="nama_lengkap" placeholder="Masukkan Nama Lengkap Anda" id="" class="form-control">
                                     </div>
                                 </div>
                                 <div class="row my-3">
