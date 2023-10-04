@@ -8,7 +8,7 @@
 </head>
 
 <body>
-    <form action="config/aksi_lokasi.php" method="post">
+    <form action="../../config/aksi_lokasi.php" method="post">
         <div>
             <label for="">Nama Lokasi</label>
             <input type="text" name="nama_lokasi" id="">
