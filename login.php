@@ -1,6 +1,5 @@
 <?php
 include "layout/header.php";
-include "template/navbar.php";
 ?>
 
 <body class="">
