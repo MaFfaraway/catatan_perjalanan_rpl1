@@ -12,7 +12,7 @@ if (!empty($nik)) {
     </head> -->
 
     <div class="container my-4">
-        <div class="card bg-info">
+        <div class="card bg-info my-2">
             <div class="card-body">
                 <h1>Selamat Datang <?= $nama_lengkap; ?></h1>
             </div>
@@ -78,6 +78,7 @@ if (!empty($nik)) {
 
 
 <?php
+    include '../layout/footer.php';
 } else {
     header('location:../login.php');
 }

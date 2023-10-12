@@ -22,35 +22,35 @@
 </head>
 
 <body>
-    <?php 
+    <?php
 
 
 
-        $preUrl =   explode('/', $_SERVER['HTTP_HOST'].$_SERVER['REQUEST_URI'] );
-        $url    =   (isset($_SERVER['HTTPS'])?'https':'http').'://'.$preUrl[0].'/'.$preUrl[1].'/';
-        define('base_url',$url);
-    
+    $preUrl =   explode('/', $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI']);
+    $url    =   (isset($_SERVER['HTTPS']) ? 'https' : 'http') . '://' . $preUrl[0] . '/' . $preUrl[1] . '/';
+    define('base_url', $url);
+
     ?>
-<nav class="sticky-top shadow navbar navbar-expand-lg bg-light">
-    <div class="container-fluid container">
-        <a class="navbar-brand" href="#">
-            <img src="img/logoKEMKES.png" alt="">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse flex-grow" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto flex-nowrap">
-                <li class="nav-item mx-2">
-                    <a class="nav-link active" aria-current="page" href="<?= $url ?>index.php">Beranda</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">Dashboard PeduliSatu</a>
-                </li>
-                <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">Tentang PeduliSatu</a>
-                </li>
-                <!-- <li class="nav-item dropdown">
+    <nav class="sticky-top shadow navbar navbar-expand-lg bg-light">
+        <div class="container-fluid container">
+            <a class="navbar-brand" href="#">
+                <img src="<?= base_url ?>img/logoKEMKES.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse flex-grow" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto flex-nowrap">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link active" aria-current="page" href="<?= base_url ?>index.php">Beranda</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">Dashboard PeduliSatu</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link" href="#">Tentang PeduliSatu</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                             Dropdown
                         </a>
@@ -63,9 +63,9 @@
                             <li><a class="dropdown-item" href="#">Something else here</a></li>
                         </ul>
                     </li> -->
-            </ul>
+                </ul>
 
-            <button class="btn btn-outline-success" onclick="location.href='<?= $url ?>login.php'">Masuk</button>
+                <button class="btn btn-outline-success" onclick="location.href='<?= base_url ?>login.php'">Masuk</button>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
