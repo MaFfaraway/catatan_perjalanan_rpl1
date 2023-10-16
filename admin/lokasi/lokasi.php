@@ -26,12 +26,12 @@ if (!empty($nik_sess) and !empty($nama_lengkap_sess)) {
                     <form action="../../config/aksi_lokasi.php" method="post">
                         <div class="form-group">
                             <label for="">Nama Lokasi</label>
-                            <input type="text" class="form-control" name="nama_lokasi" id="">
+                            <input type="text" class="form-control" name="nama_lokasi" id="" required>
                             <input type="hidden" name="act" value="simpan">
                         </div>
                         <div class="form-group">
                             <label for="">alamat_lokasi</label>
-                            <textarea name="alamat_lokasi" class="form-control" id="" cols="30" rows="10"></textarea>
+                            <textarea name="alamat_lokasi" class="form-control" id="" cols="30" rows="10" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary my-2 ">Simpan</button>
                     </form>
@@ -58,7 +58,7 @@ if (!empty($nik_sess) and !empty($nama_lengkap_sess)) {
                         <td></td>
                         <td><?= $data_lokasi['nama_lokasi']; ?></td>
                         <td><?= $data_lokasi['alamat_lokasi']; ?></td>
-                        <td><a href="config/aksi_lokasi.php?act=delete&id_lokasi=<?= $data_lokasi['id_lokasi']; ?>">Hapus</a></td>
+                        <td><a href="<?= base_url ?>config/aksi_lokasi.php?act=delete&id_lokasi=<?= $data_lokasi['id_lokasi']; ?>">Hapus</a></td>
                         <td><a href="edit_lokasi.php?act=update&id_lokasi=<?= $data_lokasi['id_lokasi']; ?>">Update</a></td>
                     </tr>
                 <?php endwhile ?>

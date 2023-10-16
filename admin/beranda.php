@@ -27,12 +27,12 @@ if (!empty($nik)) {
                     <div class="col-lg-6">
                         <div class="card mb-3" style="max-width: 340px;">
                             <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="..." class="img-fluid rounded-start" alt="...">
+                                <div class="col-md-4 text-center my-auto">
+                                    <i class="bi bi-person-rolodex fs-1 "></i>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
-                                        <h5 class="card-title">Jumlah Perjalanan</h5>
+                                        <h5 class="card-title">Jumlah Pengguna</h5>
                                         <p class="card-text">12</p>
                                     </div>
                                 </div>
@@ -42,12 +42,12 @@ if (!empty($nik)) {
                     <div class="col-lg-6">
                         <div class="card mb-3" style="max-width: 340px;">
                             <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="..." class="img-fluid rounded-start" alt="...">
+                                <div class="col-md-4 text-center my-auto">
+                                    <i class="bi bi-geo-alt-fill fs-1   "></i>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">
-                                        <h5 class="card-title">Jumlah Perjalanan</h5>
+                                        <h5 class="card-title">Jumlah Lokasi</h5>
                                         <p class="card-text">12</p>
                                     </div>
                                 </div>
@@ -57,8 +57,8 @@ if (!empty($nik)) {
                     <div class="col-lg-6">
                         <div class="card mb-3" style="max-width: 340px;">
                             <div class="row g-0">
-                                <div class="col-md-4">
-                                    <img src="..." class="img-fluid rounded-start" alt="...">
+                                <div class="col-md-4 text-center my-auto">
+                                    <i class="bi bi-car-front-fill fs-1"></i>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="card-body">

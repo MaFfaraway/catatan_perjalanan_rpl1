@@ -15,7 +15,7 @@ if ($act    ==  'simpan') {
     $query  =   mysqli_query($conn, $sql);
 
     if ($query) {
-        header('location:../lokasi.php');;
+        header('location:../admin/lokasi/lokasi.php');
     } else {
         echo "Gagal";
     }
@@ -28,7 +28,7 @@ if ($act    ==  'simpan') {
     $query  =   mysqli_query($conn, $sql);
 
     if ($query   =   true) {
-        header('location:../lokasi.php');
+        header('location:../admin/lokasi/lokasi.php');
     } else {
         echo "gagal";
     }
@@ -37,6 +37,6 @@ if ($act    ==  'simpan') {
     $query  =   mysqli_query($conn, $sql);
 
     if ($query) {
-        header('location:../lokasi.php');
+        header('location:../admin/lokasi/lokasi.php');
     }
 }
