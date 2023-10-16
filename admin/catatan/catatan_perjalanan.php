@@ -35,8 +35,8 @@ $query  =   mysqli_query($conn, $sql);
         <div class="col-lg-7">
             <div class="card py-auto me-4 shadow">
                 <div class="card-body">
-                    <table class="table">
-                        <thead>
+                    <table class="table table-bordered">
+                        <thead class="table-dark">
                             <tr>
                                 <th>NO</th>
                                 <th>LOKASI PERJALANAN</th>
