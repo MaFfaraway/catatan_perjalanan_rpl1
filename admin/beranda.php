@@ -1,10 +1,22 @@
 <?php
 session_start();
+include "../config/conn.php";
 
 $nik            =   $_SESSION['nik'];
 $nama_lengkap   =   $_SESSION['nama_lengkap'];
 if (!empty($nik)) {
-    include "header_admin.php"
+    include "header_admin.php";
+
+    // Hitung jumlah pengguna
+    $sqlJmlPjln = "SELECT * FROM pengguna";
+    $queryJmlPjln = mysqli_query($conn, $sqlJmlPjln);
+    $rowJmlPjln =   mysqli_num_rows($queryJmlPjln);
+
+    // Hitung jumlah lokasi
+    $sqlJmlLok = "SELECT * FROM lokasi";
+    $queryJmlLok = mysqli_query($conn, $sqlJmlLok);
+    $rowJmlLok =   mysqli_num_rows($queryJmlLok);
+
 ?>
 
     <!-- <head>
@@ -33,7 +45,7 @@ if (!empty($nik)) {
                                 <div class="col-md-8">
                                     <div class="card-body">
                                         <h5 class="card-title">Jumlah Pengguna</h5>
-                                        <p class="card-text">12</p>
+                                        <p class="card-text"><?= $rowJmlPjln; ?></p>
                                     </div>
                                 </div>
                             </div>
@@ -48,7 +60,7 @@ if (!empty($nik)) {
                                 <div class="col-md-8">
                                     <div class="card-body">
                                         <h5 class="card-title">Jumlah Lokasi</h5>
-                                        <p class="card-text">12</p>
+                                        <p class="card-text"><?= $rowJmlLok; ?></p>
                                     </div>
                                 </div>
                             </div>
